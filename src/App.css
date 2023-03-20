@@ -67,7 +67,7 @@ main{
 
 .project-container{
     border: 1px solid blue;
-    padding-right: 200px;
+    padding-right: 100px;
 }
 
 .spacer{
@@ -76,8 +76,8 @@ main{
     border: 1px solid pink;
 }
 
-main > div > h1 {
-    font-size: 3rem;
+.title-hello {
+    font-size: clamp(3rem, 7vw, 5rem);
 }
 
 .project-title{
@@ -86,6 +86,11 @@ main > div > h1 {
 
 .project-lists{
     list-style: none;
+}
+
+.project-lists > li {
+    white-space: nowrap;
+    margin-top: 20px;
 }
 
 .img-container{
@@ -97,9 +102,22 @@ main > div > h1 {
     width: 100%;
 }
 
-.info-project-container{
+.info-project-container {
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
-}
+  .project-btn{
+    font-family: inherit;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 
 
 
@@ -124,8 +142,4 @@ main > div > h1 {
         max-width: 100%;
     }
 
-
-    .spacer{
-       width: 200px;
-    }
 }
