@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Footer = () => {
+    const year = new Date().getFullYear()
   return (
     <footer>
-      <p>2023 jmanset.com</p>
+      <p>© Copyright {year}. Made by <a href="/">Jerome Manset.</a></p>
     </footer>
   )
 }

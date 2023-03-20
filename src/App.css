@@ -113,6 +113,7 @@ main{
 
   .project-btn{
     font-family: inherit;
+    background-color: transparent;
     border: 1px solid transparent;
     padding: 10px;
     border-radius: 10px;
@@ -131,6 +132,10 @@ main{
 
     main{
         max-width: 80%;
+    }
+
+    .hello-container{
+        padding-right: 100px;
     }
     
 }

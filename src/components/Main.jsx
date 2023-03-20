@@ -31,7 +31,7 @@ const Main = () => {
          
     <div className='info-container'>
        
-        {showHello && <div>
+        {showHello && <div className='hello-container'>
             <h1 className='title-hello'>Hello!</h1>
             <p>
                 Career shifter with a background in X (your previous field) and a passion for web development. Strong problem-solver with a keen eye for detail and a drive to stay current with the latest web development technologies. Proven ability to learn quickly and work well in a team.
