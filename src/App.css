@@ -7,7 +7,6 @@
 }
 
 body{
-    background-color: brown;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,9 +15,10 @@ body{
 
 .app-container{
     min-width: 335px;
+    max-width: 1280px;
     min-height: 100vh;
     max-width: 1280px;
-    border: 1px solid white;
+    border: 1px solid red;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -26,6 +26,7 @@ body{
 }
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -43,19 +44,29 @@ header {
 .icons{
     width: 100%;
     height: 100%;
-    fill: whitesmoke;
+    fill: #333;
 }
 
+.info-container{
+    border: 1px solid green;
+}
 
+.project-container{
+    border: 1px solid blue;
+    padding-right: 200px;
+}
 
+.spacer{
+    min-width: 20px;
+    min-height: 20px;
+    border: 1px solid pink;
+}
 
 main > div > h1 {
-    color: white;
     font-size: 3rem;
 }
 
 .project-title{
-    color: white;
     font-size: 2rem;
 }
 
@@ -63,9 +74,43 @@ main > div > h1 {
     list-style: none;
 }
 
+.img-container{
+    border: 2px solid orange;
+    width: 50%;
+}
+
+.img-container > img {
+    width: 100%;
+}
+
+.info-project-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc-container{
+    max-width: 300px;
+}
+
 @media (min-width: 768px){
+
+    .info-project-container{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px){
+
     main{
         display: flex;
+    }
+
+    .info-project-container{
         flex-direction: row;
+    }
+
+
+    .spacer{
+       width: 200px;
     }
 }

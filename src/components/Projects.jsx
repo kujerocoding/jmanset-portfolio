@@ -5,10 +5,9 @@ const Projects = () => {
     <div className='project-container'>
         <h2 className='project-title'>Projects</h2>
       <ul className='project-lists'>
-        <li>Projects</li>
-        <li>Projects</li>
-        <li>Projects</li>
-        <li>Projects</li>
+     {['proj1','proj2', 'proj3'].map(item => (
+        <li>{item}</li>
+     ))}
       </ul>
     </div>
   )
