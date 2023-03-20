@@ -54,9 +54,11 @@ main{
 }
 
 .info-container{
+    min-height: 260px;
     width: 100%;
     border: 1px solid green;
-    max-height: 500px;
+   
+
 }
 
 .info-container > h3 {
@@ -91,12 +93,12 @@ main > div > h1 {
 }
 
 .img-container > img {
+    padding: 30px;
     width: 100%;
 }
 
 .info-project-container{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+
 }
 
 
@@ -104,6 +106,7 @@ main > div > h1 {
 @media (min-width: 768px){
 
     .info-project-container{
+        display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
@@ -111,8 +114,6 @@ main > div > h1 {
     main{
         max-width: 80%;
     }
-
-
     
 }
 

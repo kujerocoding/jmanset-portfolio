@@ -18,12 +18,19 @@ const Main = () => {
             return prevData.map(item => item.name === name ? {...item, isOpen: true} : {...item, isOpen: false})
           }
         )
-        console.log(data)
+        //console.log(data)
     }
+    console.log('raw', data)
+    const filteredData = data.filter(item => item.isOpen === true)
+    console.log('filtered data: ',filteredData)
+    const {title, img, desc} = filteredData[0]
+    console.log(title,img,desc)
 
   return (
     <main>
+         
     <div className='info-container'>
+       
         {showHello && <div>
             <h1>Hello!</h1>
             <p>
@@ -32,10 +39,13 @@ const Main = () => {
         </div>}
         
        { showProject && <div className='info-project-container'>
-
-            <div className='img-container'><img src="../src/assets/image/atv.jpg"></img></div>
+            
+            <div className='img-container'>
+                <h3>{title}</h3>
+                <img src={`../src/assets/image/${img}`}></img>
+            </div>
             <div className='desc-container'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolores voluptatem asperiores, eligendi labore nam sunt nulla nostrum atque? Quaerat praesentium iste commodi natus placeat enim incidunt laboriosam id quasi!</p>
+                <p>{desc}</p>
                 <ul>
                     <li><a href="">Live</a></li>
                     <li><a href="">Source Code</a></li>
