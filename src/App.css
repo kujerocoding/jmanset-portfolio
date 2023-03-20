@@ -49,6 +49,14 @@ header {
 
 .info-container{
     border: 1px solid green;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-container > h3 {
+    padding-top: 100px;
 }
 
 .project-container{
@@ -76,7 +84,7 @@ main > div > h1 {
 
 .img-container{
     border: 2px solid orange;
-    width: 50%;
+    flex: 1;
 }
 
 .img-container > img {
@@ -86,17 +94,26 @@ main > div > h1 {
 .info-project-container{
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
-.desc-container{
-    max-width: 300px;
-}
+
 
 @media (min-width: 768px){
 
     .info-project-container{
         flex-direction: row;
     }
+
+    .info-container{
+        max-height: 400px;
+    }
+
+    .desc-container{
+        flex: 1;
+    }
+
+    
 }
 
 @media (min-width: 1024px){
