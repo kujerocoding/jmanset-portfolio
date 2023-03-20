@@ -13,6 +13,7 @@ body{
     font-family: 'Jost', sans-serif;
 }
 
+
 .app-container{
     min-width: 335px;
     max-width: 1280px;
@@ -23,6 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 header {
@@ -47,12 +49,14 @@ header {
     fill: #333;
 }
 
+main{
+    max-width: 400px;
+}
+
 .info-container{
+    width: 100%;
     border: 1px solid green;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-height: 500px;
 }
 
 .info-container > h3 {
@@ -84,7 +88,6 @@ main > div > h1 {
 
 .img-container{
     border: 2px solid orange;
-    flex: 1;
 }
 
 .img-container > img {
@@ -92,9 +95,8 @@ main > div > h1 {
 }
 
 .info-project-container{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 
@@ -102,16 +104,14 @@ main > div > h1 {
 @media (min-width: 768px){
 
     .info-project-container{
-        flex-direction: row;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .info-container{
-        max-height: 400px;
+    main{
+        max-width: 80%;
     }
 
-    .desc-container{
-        flex: 1;
-    }
 
     
 }
@@ -120,10 +120,7 @@ main > div > h1 {
 
     main{
         display: flex;
-    }
-
-    .info-project-container{
-        flex-direction: row;
+        max-width: 100%;
     }
 
 

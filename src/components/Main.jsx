@@ -33,7 +33,7 @@ const Main = () => {
         
        { showProject && <div className='info-project-container'>
 
-            <div className='img-container'><img src=""></img></div>
+            <div className='img-container'><img src="../src/assets/image/atv.jpg"></img></div>
             <div className='desc-container'>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolores voluptatem asperiores, eligendi labore nam sunt nulla nostrum atque? Quaerat praesentium iste commodi natus placeat enim incidunt laboriosam id quasi!</p>
                 <ul>
@@ -44,7 +44,7 @@ const Main = () => {
             
         </div>}
     </div>
-    <div className='spacer'></div>
+    {/* <div className='spacer'></div> */}
     <div className='project-container'>
         <h2 className='project-title'>Projects</h2>
         <ul className='project-lists'>
