@@ -17,12 +17,17 @@ body{
     background-color: #242424;
     color: whitesmoke;
     fill: white;
+    transition: all .3s ease-in-out;
+    transform-origin: center;
 }
 
+
 .light{
-    background-color: whitesmoke;
+    background-color: white;
     color: #242424;
     fill: #242424;
+    transition: all .5s ease-in-out;
+    transform-origin: center;
 }
 
 
@@ -42,9 +47,31 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 
+header > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    width: 40px;
+}
+
+.logo-text{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+    font-size: clamp(.7rem, 3vw, 1rem);
+}
 
 
 .nav-lists{

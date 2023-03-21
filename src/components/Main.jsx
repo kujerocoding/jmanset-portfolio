@@ -34,7 +34,9 @@ const Main = () => {
         {showHello && <div className='hello-container'>
             <h1 className='title-hello'>Hello!</h1>
             <p>
-                Career shifter with a background in X (your previous field) and a passion for web development. Strong problem-solver with a keen eye for detail and a drive to stay current with the latest web development technologies. Proven ability to learn quickly and work well in a team.
+            My name is Jerome, and I am a self-taught front-end developer with a background in network engineering. I shifted my career to pursue my passion for web development, and I have been learning and building projects on my own. I am excited to continue growing my skills and contributing to the field.
+            <br />
+            In my free time, I enjoy watching NBA games and playing online games."
             </p>
         </div>}
         
