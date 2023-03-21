@@ -8,7 +8,7 @@ const Header = (props) => {
     <header>
       <a href="/"><img src='../src/assets/image/logo.png' ></img></a>
       
-      <NavBar toggleDarkMode={props.toggleDarkMode}/>
+      <NavBar toggleDarkMode={props.toggleDarkMode} darkMode={props.darkMode}/>
     </header>
   )
 }

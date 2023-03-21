@@ -14,15 +14,15 @@ body{
 }
 
 .dark{
-    background-color: #333;
+    background-color: #242424;
     color: whitesmoke;
     fill: white;
 }
 
 .light{
     background-color: whitesmoke;
-    color: #333;
-    fill: #333;
+    color: #242424;
+    fill: #242424;
 }
 
 

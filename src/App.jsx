@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className='app-container'>
-      <Header toggleDarkMode={toggleDarkMode}/>
+      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
       <Main />
       <Footer />
     </div>
