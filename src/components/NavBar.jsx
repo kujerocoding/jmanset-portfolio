@@ -11,9 +11,9 @@ const NavBar = (props) => {
     <nav>
       <ul className='nav-lists'>
         <li><a>{mode}</a></li>
-        <li><a href=""><AiFillGithub className='icons' /></a></li>
+        <li><a href="https://github.com/kujerocoding" target="_blank"><AiFillGithub className='icons' /></a></li>
         <li><a href=""><MdEmail className='icons'/></a></li>
-        <li><a href=""><AiFillLinkedin className='icons'/></a></li>
+        <li><a href="https://www.linkedin.com/in/jeromemanset22" target="_blank"><AiFillLinkedin className='icons'/></a></li>
       </ul>
     </nav>
   )

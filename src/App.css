@@ -157,6 +157,7 @@ main{
 
     .hello-container{
         padding-right: 100px;
+
     }
     
 }
@@ -166,6 +167,10 @@ main{
     main{
         display: flex;
         max-width: 100%;
+    }
+
+    .hello-container{
+        padding-left: 60px;
     }
 
 }

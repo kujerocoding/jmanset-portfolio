@@ -56,7 +56,7 @@ const Main = () => {
     </div>
     {/* <div className='spacer'></div> */}
     <div className='project-container'>
-        <h2 className='project-title'>Projects</h2>
+        <h2 className='project-title'>Featured Projects</h2>
         <ul className='project-lists'>
             <li><button name="atv" className='project-btn' onClick={handleClick}><span><BsCart4 /> |</span> Gaming Peripherals Online Store</button></li>
             <li><button name="case" className='project-btn' onClick={handleClick}><span><MdWeb /> |</span> Tourist Destination Landing Page</button></li>
