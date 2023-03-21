@@ -13,13 +13,22 @@ body{
     font-family: 'Jost', sans-serif;
 }
 
+.dark{
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.light{
+    background-color: whitesmoke;
+    color: #333;
+}
+
 
 .app-container{
     min-width: 335px;
     max-width: 1280px;
     min-height: 100vh;
-    max-width: 1280px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -56,7 +65,7 @@ main{
 .info-container{
     min-height: 260px;
     width: 100%;
-    border: 1px solid green;
+   /*  border: 1px solid green; */
    
 
 }
@@ -66,15 +75,11 @@ main{
 }
 
 .project-container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding-right: 100px;
 }
 
-.spacer{
-    min-width: 20px;
-    min-height: 20px;
-    border: 1px solid pink;
-}
+
 
 .title-hello {
     font-size: clamp(3rem, 7vw, 5rem);
@@ -94,7 +99,7 @@ main{
 }
 
 .img-container{
-    border: 2px solid orange;
+   /*  border: 2px solid orange; */
 }
 
 .img-container > img {
@@ -118,11 +123,16 @@ main{
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    color: inherit;
   }
 
 
 
 @media (min-width: 768px){
+    
+    .app-container {
+        padding: 40px;
+    }
 
     .info-project-container{
         display: grid;
