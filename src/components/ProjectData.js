@@ -11,28 +11,28 @@ export default  [
     {
         id: 2,
         name: 'atv',
-        title: 'atv rental',
-        img: 'atv.jpg',
+        title: 'JM Online Shop - Ecommerce',
+        img: 'case.jpg',
         isOpen: false,
-        desc: 'lorem ipsum asdasdbajsd ahvdglasd ad adbalksdbasdb',
+        desc: 'Wilsonport is a multiservice logistics and transport company and I created their website from scratch using ReactJS, TailwindCSS, Sanity and NextJS.',
         
     },
     {
         id: 3,
         name: 'case',
-        title: 'case store',
+        title: 'JM landing page',
         img: 'case.jpg',
         isOpen: false,
-        desc: 'asdasd da sdasdm ipsum asdasdbajsd ahvdglasd ad adbalksdbasdb',
+        desc: 'Wilsonport is a multiservice logistics and transport company and I created their website from scratch using ReactJS, TailwindCSS, Sanity and NextJS.',
         
     },
     {
         id: 4,
         name: 'mouse',
-        title: 'mouse store',
+        title: 'Tiktok Clone',
         img: 'mouse.jpg',
         isOpen: false,
-        desc: 'asd asdas d e123 1ad sdasd asdasdbajsd ahvdglasd ad adbalksdbasdb',
+        desc: "I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.",
         
     },
 ]

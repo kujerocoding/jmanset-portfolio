@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ProjectData from './ProjectData';
 import {BsCart4, BsTiktok} from 'react-icons/bs'
 import {MdWeb} from 'react-icons/md'
+import {HiArrowCircleRight} from 'react-icons/hi'
 
 
 
@@ -40,25 +41,24 @@ const Main = () => {
             </p>
         </div>}
         
-       { !showHello && <div className='info-project-container'>
+       { !showHello && <div className='project-details-container'>
             
             <div className='img-container'>
-                <h3>{title}</h3>
-                <img src={`../src/assets/image/${img}`}></img>
+                
+                <img src={`../src/assets/image/${img}`} className="project-img"></img>
             </div>
-            <div className='desc-container'>
-                <p>{desc}</p>
-                <ul>
-                    <li><a href="">Live</a></li>
-                    <li><a href="">Source Code</a></li>
-                </ul>
+            <div className='project-desc-container'>
+                <h3 className='project-title'>{title}</h3>
+                <p className='project-desc-text'>{desc}</p>
+                <p className='project-link'><a href="">View Website</a></p>
+                <p className='project-link'><a href="">Source Code</a></p>
             </div>
             
         </div>}
     </div>
     {/* <div className='spacer'></div> */}
-    <div className='project-container'>
-        <h2 className='project-title'>Featured Projects</h2>
+    <div className='project-links-container'>
+        <h2 className='project-featured'>Featured Projects</h2>
         <ul className='project-lists'>
             <li><button name="atv" className='project-btn' onClick={handleClick}><span><BsCart4 /> |</span> Gaming Peripherals Online Store</button></li>
             <li><button name="case" className='project-btn' onClick={handleClick}><span><MdWeb /> |</span> Tourist Destination Landing Page</button></li>
