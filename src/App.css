@@ -103,7 +103,7 @@ header > a{
 }
 
 .icons:hover{
-    fill: orangered;
+    fill: #F2522E;
 }
 
 main{
@@ -166,7 +166,7 @@ main{
 .project-desc-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
 }
 
 .project-desc-text{
@@ -174,9 +174,9 @@ main{
 }
 
 .project-link{
-    background-image: linear-gradient(-45deg, rgba(255, 140, 0, 0.514), rgba(255, 0, 0, 0.5));
+    /* background-image: linear-gradient(-45deg,#F2522E, #F23E2E); */
     width: 10rem;
-    margin-block: .5rem;
+    /* margin-block: .5rem; */
     padding: 2px 5px;
     border-radius: 2px;
 }
@@ -184,6 +184,7 @@ main{
 .project-link > a{
     display: inline-block;
     font-weight: bold;
+    color: #F2522E;
 }
 .project-link > a:hover{
     transition: all .3s ease-out;
@@ -239,6 +240,10 @@ footer{
     .project-title{
         text-align: left;
     }
+
+    .project-desc-container{
+        padding: 2rem 3rem 2rem 0;
+    }
     
 }
 
@@ -253,8 +258,6 @@ footer{
         padding-left: 60px;
     }
 
-    .project-desc-container{
-        padding-right: 3rem;
-    }
+    
 
 }

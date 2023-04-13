@@ -2,7 +2,7 @@ export default  [
     {
         id: 1,
         name: 'welcome',
-        title: 'welcom',
+        title: 'welcome',
         img: '',
         isOpen: true,
         desc: '',
@@ -10,11 +10,13 @@ export default  [
     },
     {
         id: 2,
-        name: 'atv',
-        title: 'JM Online Shop - Ecommerce',
-        img: 'case.jpg',
+        name: 'eliteBallers',
+        title: 'Elite Ballers',
+        img: 'eliteBallers.jpg',
         isOpen: false,
-        desc: 'Wilsonport is a multiservice logistics and transport company and I created their website from scratch using ReactJS, TailwindCSS, Sanity and NextJS.',
+        desc: 'Elite Ballers is a multiservice logistics and transport company and I created their website from scratch using ReactJS, TailwindCSS, Sanity and NextJS.',
+        liveURL: 'https://elite-ballers.pages.dev/',
+        repoURL: 'https://github.com/kujerocoding/elite-ballers'
         
     },
     {

@@ -11,7 +11,7 @@ const ProjectDetails = () => {
         <img src={`../src/assets/image/${project.img}`}></img>
         <p>{project.desc}</p>
         <ul>
-            <li><a href="">Live</a></li>
+            <li><a href={`${project.liveURL}`}>Live</a></li>
             <li><a href="">Source Code</a></li>
         </ul>
         </>

@@ -24,7 +24,7 @@ const Main = () => {
     //console.log('raw', data)
     const filteredData = data.filter(item => item.isOpen === true)
     //console.log('filtered data: ',filteredData)
-    const {title, img, desc} = filteredData[0]
+    const {title, img, desc, liveURL, repoURL} = filteredData[0]
     //console.log(title,img,desc)
 
   return (
@@ -50,8 +50,8 @@ const Main = () => {
             <div className='project-desc-container'>
                 <h3 className='project-title'>{title}</h3>
                 <p className='project-desc-text'>{desc}</p>
-                <p className='project-link'><a href="">View Website</a></p>
-                <p className='project-link'><a href="">Source Code</a></p>
+                <p className='project-link'><a href={liveURL} target='_blank'>View website</a></p>
+                <p className='project-link'><a href={repoURL} target='_blank'>Source code</a></p>
             </div>
             
         </div>}
@@ -60,7 +60,10 @@ const Main = () => {
     <div className='project-links-container'>
         <h2 className='project-featured'>Featured Projects</h2>
         <ul className='project-lists'>
-            <li><button name="atv" className='project-btn' onClick={handleClick}><span><BsCart4 /> |</span> Gaming Peripherals Online Store</button></li>
+            <li>
+              <button name="eliteBallers" className='project-btn' onClick={handleClick}>
+                <span><MdWeb /> |</span> Elite Ballers - Responsive Landing Page</button>
+            </li>
             <li><button name="case" className='project-btn' onClick={handleClick}><span><MdWeb /> |</span> Tourist Destination Landing Page</button></li>
             <li><button name="mouse" className='project-btn' onClick={handleClick}><span><BsTiktok /> |</span> Tiktok Clone</button></li>
         </ul>
