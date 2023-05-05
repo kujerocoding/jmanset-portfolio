@@ -5,7 +5,7 @@ import {MdDarkMode} from 'react-icons/md'
 const Header = (props) => {
  
   return (
-    <header>
+    <header className='b-red'>
         <a href="/">
           <div className='logo-container'>
             <img src='../src/assets/image/logo.png' className='logo' ></img>

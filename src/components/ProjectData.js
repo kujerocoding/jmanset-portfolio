@@ -14,18 +14,20 @@ export default  [
         title: 'Elite Ballers',
         img: 'eliteBallers.jpg',
         isOpen: false,
-        desc: 'Elite Ballers is a multiservice logistics and transport company and I created their website from scratch using ReactJS, TailwindCSS, Sanity and NextJS.',
+        desc: 'Elite Ballers is a multiservice logistics and transport company and I created their website from scratch using ReactJS, TailwindCSS and Typescript.',
         liveURL: 'https://elite-ballers.pages.dev/',
         repoURL: 'https://github.com/kujerocoding/elite-ballers'
         
     },
     {
         id: 3,
-        name: 'case',
-        title: 'JM landing page',
-        img: 'case.jpg',
+        name: 'gamehub',
+        title: 'GameHub',
+        img: 'gamehub.jpg',
         isOpen: false,
-        desc: 'Wilsonport is a multiservice logistics and transport company and I created their website from scratch using ReactJS, TailwindCSS, Sanity and NextJS.',
+        desc: 'GameHub is an ecommerce store using ReactJS, NextJS, TailwindCSS, Sanity(Headless CMS).',
+        liveURL: 'https://gamehub-drab.vercel.app/',
+        repoURL: 'https://github.com/kujerocoding/gamehub'
         
     },
     {

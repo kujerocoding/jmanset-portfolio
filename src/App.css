@@ -44,12 +44,12 @@ body{
     min-width: 335px;
     max-width: 1280px;
     min-height: 100vh;
-    /* border: 1px solid red; */
+    border: 1px solid violet;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 header {
@@ -107,7 +107,7 @@ header > a{
 }
 
 main{
-    max-width: 400px;
+    flex-grow: 1;
 }
 
 .info-container{
@@ -115,6 +115,8 @@ main{
     width: 100%;
     /* border: 1px solid green; */
     margin-block: 2rem;
+    display: flex;
+    align-items: start;
 }
 
 .project-title{
@@ -136,10 +138,13 @@ main{
     text-align: left;
 }
 
-
+.hello-container{
+    max-width: 700px;
+    align-self: center;
+}
 
 .title-hello {
-    font-size: clamp(3rem, 7vw, 5rem);
+    font-size: clamp(3rem, 7vw, 3.5rem);
 }
 
 .project-lists{
@@ -151,16 +156,15 @@ main{
 }
 
 .img-container{
-   /*  border: 2px solid orange; */
+    border: 2px solid orange;
 }
 
 .img-container > img {
-    padding: 30px;
     width: 100%;
 }
 
 .project-details-container {
-    animation: fadeIn 1s;
+    max-width: 700px;
   }
 
 .project-desc-container{
@@ -191,16 +195,15 @@ main{
     transform: translateX(30%);
 }
 
+
+
 footer{
     font-size: .8rem;
 }
   
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
 
-  .project-btn{
+
+.project-btn{
     font-family: inherit;
     background-color: transparent;
     border: 1px solid transparent;
@@ -208,30 +211,43 @@ footer{
     border-radius: 10px;
     cursor: pointer;
     color: inherit;
-  }
+}
 
+.b-red{
+    border: 3px solid red;
+}
+.b-blue{
+    border: 1px solid blue;
+}
+.b-green{
+    border: 1px solid green;
+}
+.b-yellow{
+    border: 1px solid yellow;
+}
 
+.b-black{
+    border: 1px solid black;
+}
 
 @media (min-width: 768px){
     
-    .app-container {
+    /* .app-container {
         padding: 40px;
-    }
+    } */
 
     .project-details-container{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     main{
-        max-width: 80%;
+        max-width: 100%;
     }
 
-    .hello-container{
+    /* .hello-container{
         padding-right: 100px;
-
-    }
+    } */
 
     .info-container{
         margin-block: 0;
@@ -241,8 +257,12 @@ footer{
         text-align: left;
     }
 
-    .project-desc-container{
-        padding: 2rem 3rem 2rem 0;
+    .project-desc-text{
+        padding: 0;
+    }
+
+    .links--external{
+        display: flex;
     }
     
 }
@@ -251,12 +271,12 @@ footer{
 
     main{
         display: flex;
-        max-width: 100%;
+        width: 100%;
     }
 
-    .hello-container{
+   /*  .hello-container{
         padding-left: 60px;
-    }
+    } */
 
     
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import ProjectData from './ProjectData';
+import Greetings from './Greetings';
 import {BsCart4, BsTiktok} from 'react-icons/bs'
 import {MdWeb} from 'react-icons/md'
-import {HiArrowCircleRight} from 'react-icons/hi'
 
 
 
@@ -28,43 +28,41 @@ const Main = () => {
     //console.log(title,img,desc)
 
   return (
-    <main>
+    <main className='b-red'>
          
-    <div className='info-container'>
+    <div className='info-container b-blue'>
        
-        {showHello && <div className='hello-container'>
-            <h1 className='title-hello'>Hello!</h1>
-            <p>
-            My name is Jerome, and I am a self-taught front-end developer with a background in network engineering. I shifted my career to pursue my passion for web development, and I have been learning and building projects on my own. I am excited to continue growing my skills and contributing to the field.
-            <br />
-            In my free time, I enjoy watching NBA games and playing online games."
-            </p>
-        </div>}
+        {showHello && <Greetings />}
         
-       { !showHello && <div className='project-details-container'>
+       { !showHello && <div className='project-details-container b-black'>
             
             <div className='img-container'>
                 
                 <img src={`../src/assets/image/${img}`} className="project-img"></img>
             </div>
             <div className='project-desc-container'>
+              <div>
                 <h3 className='project-title'>{title}</h3>
                 <p className='project-desc-text'>{desc}</p>
+              </div>
+                <div className='links--external'>
                 <p className='project-link'><a href={liveURL} target='_blank'>View website</a></p>
                 <p className='project-link'><a href={repoURL} target='_blank'>Source code</a></p>
+              </div>
+                
             </div>
             
         </div>}
     </div>
     {/* <div className='spacer'></div> */}
-    <div className='project-links-container'>
+    <div className='project-links-container b-yellow'>
         <h2 className='project-featured'>Featured Projects</h2>
         <ul className='project-lists'>
             <li>
               <button name="eliteBallers" className='project-btn' onClick={handleClick}>
                 <span><MdWeb /> |</span> Elite Ballers - Responsive Landing Page</button>
             </li>
-            <li><button name="case" className='project-btn' onClick={handleClick}><span><MdWeb /> |</span> Tourist Destination Landing Page</button></li>
+            <li><button name="gamehub" className='project-btn' onClick={handleClick}><span><MdWeb /> |</span> GameHub - E-commerce Store</button></li>
             <li><button name="mouse" className='project-btn' onClick={handleClick}><span><BsTiktok /> |</span> Tiktok Clone</button></li>
         </ul>
     </div>
