@@ -21,7 +21,7 @@ const Greetings = () => {
     }
     const parentWords = {
         hidden:{opacity: 0},
-        visible: (i = 50) => ({
+        visible: (i = 60) => ({
             opacity: 1,
             transition: { staggerChildren: 0.12, delayChildren: 0.04 * i, staggerDirection: -1} 
         })

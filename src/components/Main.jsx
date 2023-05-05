@@ -36,7 +36,7 @@ const Main = () => {
         
        { !showHello && <div className='project-details-container b-black'>
             
-            <div className='img-container'>
+            <div className='img-container'> 
                 
                 <img src={`../src/assets/image/${img}`} className="project-img"></img>
             </div>
@@ -54,7 +54,6 @@ const Main = () => {
             
         </div>}
     </div>
-    {/* <div className='spacer'></div> */}
     <div className='project-links-container b-yellow'>
         <h2 className='project-featured'>Featured Projects</h2>
         <ul className='project-lists'>

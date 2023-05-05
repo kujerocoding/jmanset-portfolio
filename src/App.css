@@ -16,10 +16,9 @@ button{
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Jost', sans-serif;
+    border: 2px solid black;
+    height: 100vh;
 }
 
 .dark{
@@ -39,17 +38,17 @@ body{
     transform-origin: center;
 }
 
+#root{
+    border: 3px solid orange;
+    height: 100%;
+    display: flex;
+}
 
 .app-container{
-    min-width: 335px;
-    max-width: 1280px;
-    min-height: 100vh;
-    border: 1px solid violet;
-    padding: 20px;
+    border: 2px solid violet;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
 }
 
 header {
@@ -107,16 +106,17 @@ header > a{
 }
 
 main{
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .info-container{
     min-height: 260px;
-    width: 100%;
+    width: 90%;
+    margin-inline: auto;
     /* border: 1px solid green; */
     margin-block: 2rem;
     display: flex;
-    align-items: start;
+    background-color: red;
 }
 
 .project-title{
@@ -126,12 +126,9 @@ main{
 }
 
 .project-links-container{
-    /* border: 1px solid blue; */
-    padding-right: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
+    width: 90%;
+    margin-inline: auto;
+    background-color: yellow;
 }
 
 .header--greetings{
@@ -141,9 +138,7 @@ main{
 }
 
 .aboutme{
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
+    
 }
 
 .project-featured{
@@ -176,8 +171,8 @@ main{
 }
 
 .project-details-container {
-    max-width: 700px;
-  }
+    
+}
 
 .project-desc-container{
     display: flex;
@@ -254,7 +249,7 @@ footer{
     }
 
     main{
-        max-width: 100%;
+        
     }
 
     /* .hello-container{
@@ -282,14 +277,21 @@ footer{
 @media (min-width: 1024px){
 
     main{
-        display: flex;
-        width: 100%;
+       display: flex;
     }
 
-   /*  .hello-container{
-        padding-left: 60px;
-    } */
+    .info-container{
+        flex-basis: 70%;
+    }
 
+    .project-links-container{
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 100px;
+    }
+   
     
 
 }
