@@ -134,6 +134,18 @@ main{
     gap: 2rem;
 }
 
+.header--greetings{
+    overflow: hidden;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.aboutme{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+
 .project-featured{
     text-align: left;
 }
