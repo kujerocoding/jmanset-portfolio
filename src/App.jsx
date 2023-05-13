@@ -26,7 +26,7 @@ const App = () => {
     <div className='app-container'>
       <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
       <Main />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

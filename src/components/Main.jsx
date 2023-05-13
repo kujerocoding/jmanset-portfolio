@@ -36,22 +36,20 @@ const Main = () => {
         
        { !showHello && <div className='project-details-container b-black'>
             
-            <div className='img-container'> 
-                
-                <img src={`../src/assets/image/${img}`} className="project-img"></img>
-            </div>
+            
             <div className='project-desc-container'>
-              <div>
+              
                 <h3 className='project-title'>{title}</h3>
                 <p className='project-desc-text'>{desc}</p>
-              </div>
-                <div className='links--external'>
+              
+            </div>
+            <div className='img-container'> 
+                <img src={`../src/assets/image/${img}`} className="project-img"></img>
+            </div>
+            <div className='links--external'>
                 <p className='project-link'><a href={liveURL} target='_blank'>View website</a></p>
                 <p className='project-link'><a href={repoURL} target='_blank'>Source code</a></p>
               </div>
-                
-            </div>
-            
         </div>}
     </div>
     <div className='project-links-container b-yellow'>
