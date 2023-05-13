@@ -28,13 +28,13 @@ const Main = () => {
     //console.log(title,img,desc)
 
   return (
-    <main className='b-red'>
+    <main className=''>
          
-    <div className='info-container b-blue'>
+    <div className='info-container'>
        
         {showHello && <Greetings />}
         
-       { !showHello && <div className='project-details-container b-black'>
+       { !showHello && <div className='project-details-container'>
             
             
             <div className='project-desc-container'>
@@ -43,25 +43,30 @@ const Main = () => {
                 <p className='project-desc-text'>{desc}</p>
               
             </div>
-            <div className='img-container'> 
-                <img src={`../src/assets/image/${img}`} className="project-img"></img>
-            </div>
-            <div className='links--external'>
-                <p className='project-link'><a href={liveURL} target='_blank'>View website</a></p>
-                <p className='project-link'><a href={repoURL} target='_blank'>Source code</a></p>
+              <div className='img-container'> 
+                  <img src={`../src/assets/image/${img}`} className="project-img"></img>
               </div>
+            <div className='links--external'>
+                <a href={liveURL} target='_blank'><button className='links-external-btn'>View website</button></a>
+                <a href={repoURL} target='_blank'><button className='links-external-btn'>Source code</button></a>
+            </div>
         </div>}
     </div>
-    <div className='project-links-container b-yellow'>
-        <h2 className='project-featured'>Featured Projects</h2>
-        <ul className='project-lists'>
-            <li>
-              <button name="eliteBallers" className='project-btn' onClick={handleClick}>
-                <span><MdWeb /> |</span> Elite Ballers - Responsive Landing Page</button>
-            </li>
-            <li><button name="gamehub" className='project-btn' onClick={handleClick}><span><MdWeb /> |</span> GameHub - E-commerce Store</button></li>
-            <li><button name="mouse" className='project-btn' onClick={handleClick}><span><BsTiktok /> |</span> Tiktok Clone</button></li>
-        </ul>
+    <div className='project-links-container'>
+        <div className='project-links'>
+          <h2 className='project-featured'>My Projects</h2>
+          <ul className='project-lists'>
+              <li>
+                <button name="eliteBallers" className='project-btn' onClick={handleClick}>
+                  <span><MdWeb /> |</span> Elite Ballers - Responsive Landing Page</button>
+              </li>
+              <li><button name="gamehub" className='project-btn' onClick={handleClick}><span><MdWeb /> |</span> GameHub - E-commerce Store</button></li>
+              <li><button name="mouse" className='project-btn' onClick={handleClick}><span><BsTiktok /> |</span> Tiktok Clone</button></li>
+          </ul>
+          
+            <button className='test shrink-border'>View website</button>
+          
+        </div>
     </div>
     </main>
   )

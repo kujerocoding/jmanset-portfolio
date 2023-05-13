@@ -29,7 +29,11 @@ const Greetings = () => {
 
   return (
     <div className='hello-container b-green'>
-
+        <div className='img-profile-relative'>
+        <div className='img-profile-container'>
+        <img src="../src/assets/image/avatar.png" alt="profile picture"/> 
+        </div>
+        </div>
         <motion.div className='header--greetings b-blue'
             initial="hidden"
             animate="visible"
