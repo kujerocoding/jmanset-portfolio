@@ -47,8 +47,8 @@ const Main = () => {
                   <img src={`../src/assets/image/${img}`} className="project-img"></img>
               </div>
             <div className='links--external'>
-                <a href={liveURL} target='_blank'><button className='links-external-btn'>View website</button></a>
-                <a href={repoURL} target='_blank'><button className='links-external-btn'>Source code</button></a>
+                <a href={liveURL} target='_blank'><button className='links-external-btn btn-shrink-border'>View website</button></a>
+                <a href={repoURL} target='_blank'><button className='links-external-btn btn-shrink-border'>Source code</button></a>
             </div>
         </div>}
     </div>
@@ -64,7 +64,7 @@ const Main = () => {
               <li><button name="mouse" className='project-btn' onClick={handleClick}><span><BsTiktok /> |</span> Tiktok Clone</button></li>
           </ul>
           
-            <button className='test shrink-border'>View website</button>
+          
           
         </div>
     </div>
