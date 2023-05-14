@@ -55,16 +55,14 @@ const Main = () => {
     <div className='project-links-container'>
         <div className='project-links'>
           <h2 className='project-featured'>My Projects</h2>
-          <ul className='project-lists'>
-              <li>
-                <button name="eliteBallers" className='project-btn' onClick={handleClick}>
-                  <span><MdWeb /> |</span> Elite Ballers - Responsive Landing Page</button>
-              </li>
-              <li><button name="gamehub" className='project-btn' onClick={handleClick}><span><MdWeb /> |</span> GameHub - E-commerce Store</button></li>
-              <li><button name="mouse" className='project-btn' onClick={handleClick}><span><BsTiktok /> |</span> Tiktok Clone</button></li>
-          </ul>
-          
-          
+         
+            <ul className='project-lists'>
+                <li><button name="eliteBallers" className='btn from-left' onClick={handleClick}>
+                  EliteBallers</button>
+                </li>
+                <li><button name="gamehub" className='btn from-left' onClick={handleClick}>GameHub</button></li>
+                <li><button name="mouse" className='btn from-left' onClick={handleClick}>Tiktok Clone</button></li>
+            </ul>
           
         </div>
     </div>
