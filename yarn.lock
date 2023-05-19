@@ -407,10 +407,10 @@
   "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
   "version" "1.0.5"
 
-"framer-motion@^10.12.7":
-  "integrity" "sha512-awOlKkDvcQpv92Pzw5KCWFehxzvqtGYZqnLvHWZvQFpIxaPsRMypRX+vhugpciOzQPkZbc37X4dJLIZLfGM/CQ=="
-  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-10.12.7.tgz"
-  "version" "10.12.7"
+"framer-motion@^10.12.10":
+  "integrity" "sha512-f/VkrpxfG4xSmBi105/NCfcTt219IgglQEUR0BsuFZAg+be6N3QAcujFyBEvBvbDOSP9Ccv6OMiaY0HFMnBoMA=="
+  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-10.12.10.tgz"
+  "version" "10.12.10"
   dependencies:
     "tslib" "^2.4.0"
   optionalDependencies:

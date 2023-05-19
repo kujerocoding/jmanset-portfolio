@@ -3,6 +3,8 @@ import ProjectData from './ProjectData';
 import Greetings from './Greetings';
 import {BsCart4, BsTiktok} from 'react-icons/bs'
 import {MdWeb} from 'react-icons/md'
+import { motion, AnimatePresence} from 'framer-motion';
+import Project from './Project';
 
 
 
@@ -27,45 +29,29 @@ const Main = () => {
     const {title, img, desc, liveURL, repoURL} = filteredData[0]
     //console.log(title,img,desc)
 
+    const variants = {
+      open: { opacity: 1, x: 0 },
+      closed: { opacity: 0, x: "-100%" },
+    }
+
   return (
-    <main className=''>
-         
-    <div className='info-container'>
-       
-        {showHello && <Greetings />}
-        
-       { !showHello && <div className='project-details-container'>
-            
-            
-            <div className='project-desc-container'>
-              
-                <h3 className='project-title'>{title}</h3>
-                <p className='project-desc-text'>{desc}</p>
-              
-            </div>
-              <div className='img-container'> 
-                  <img src={`../src/assets/image/${img}`} className="project-img"></img>
-              </div>
-            <div className='links--external'>
-                <a href={liveURL} target='_blank'><button className='links-external-btn btn-shrink-border'>View website</button></a>
-                <a href={repoURL} target='_blank'><button className='links-external-btn btn-shrink-border'>Source code</button></a>
-            </div>
-        </div>}
-    </div>
-    <div className='project-links-container'>
-        <div className='project-links'>
-          <h2 className='project-featured'>My Projects</h2>
-         
-            <ul className='project-lists'>
-                <li><button name="eliteBallers" className='btn from-left' onClick={handleClick}>
-                  EliteBallers</button>
-                </li>
-                <li><button name="gamehub" className='btn from-left' onClick={handleClick}>GameHub</button></li>
-                <li><button name="mouse" className='btn from-left' onClick={handleClick}>Tiktok Clone</button></li>
-            </ul>
-          
-        </div>
-    </div>
+    <main> 
+      <div className='info-container' >
+        {showHello ? <Greetings /> : <Project {...filteredData[0]}/> }
+      </div>
+      <div className='project-links-container'>
+          <div className='project-links'>
+            <h2 className='project-featured'>My Projects</h2>
+              <ul className='project-lists'>
+                  <li><button name="eliteBallers" className='btn from-left' onClick={handleClick}>
+                    EliteBallers</button>
+                  </li>
+                  <li><button name="gamehub" className='btn from-left' onClick={handleClick}>GameHub</button></li>
+                  <li><button name="animeclouds" className='btn from-left' onClick={handleClick}>AnimeClouds</button></li>
+              </ul>
+          </div>
+      </div>
+      
     </main>
   )
 }

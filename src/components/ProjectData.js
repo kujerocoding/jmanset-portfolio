@@ -11,7 +11,7 @@ export default  [
     {
         id: 2,
         name: 'eliteBallers',
-        title: 'Elite Ballers',
+        title: 'EliteBallers',
         img: 'EliteBallers.png',
         isOpen: false,
         desc: 'Elite Ballers is a multiservice logistics and transport company and I created their website from scratch using ReactJS, TailwindCSS and Typescript.',
@@ -32,9 +32,9 @@ export default  [
     },
     {
         id: 4,
-        name: 'mouse',
-        title: 'Tiktok Clone',
-        img: 'mouse.jpg',
+        name: 'animeclouds',
+        title: 'AnimeClouds',
+        img: 'AnimeClouds.png',
         isOpen: false,
         desc: "I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.",
         

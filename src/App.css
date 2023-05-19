@@ -371,11 +371,11 @@ footer{
     transition-delay: .5s;
   }
   
-  .btn:hover:before {
+  .btn:hover:before{
     transition-delay: 0s;
   }
   
-  .btn:hover:after {
+  .btn:hover:after{
     background: #274659;
     transition-delay: .35s;
   }
@@ -406,6 +406,10 @@ footer{
   width: 100%;
 }
 
+.shit{
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 @media (min-width: 768px){
     
