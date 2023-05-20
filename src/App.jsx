@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Main from './components/Main'
+import { AnimatePresence} from 'framer-motion'
 
 
 const App = () => {
@@ -23,11 +24,13 @@ const App = () => {
   }
 
   return (
-    <div className='app-container'>
-      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
-      <Main />
-      {/* <Footer /> */}
-    </div>
+    <AnimatePresence>
+      <div className='app-container'>
+        <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
+        <Main />
+        {/* <Footer /> */}
+      </div>
+      </AnimatePresence>
   )
 }
 

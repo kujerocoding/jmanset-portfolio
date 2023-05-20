@@ -28,7 +28,7 @@ const Greetings = () => {
     }
 
   return (
-    <div className='hello-container b-green'>
+    <div className='hello-container b-green' key="bar">
         <div className='img-profile-relative'>
         <div className='img-profile-container'>
         <img src="../src/assets/image/avatar.png" alt="profile picture"/> 
