@@ -354,7 +354,7 @@ footer{
     position: relative; 
     padding-bottom: .5rem;
     color: inherit;
-    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);  
+    transition: all 200ms cubic-bezier(0.77, 0, 0.175, 1);  
     cursor: pointer;
     user-select: none;
   }
@@ -368,7 +368,7 @@ footer{
   
   .btn:hover {
     font-weight: bold;
-    transition-delay: .5s;
+    transition-delay: .3s;
   }
   
   .btn:hover:before{
@@ -408,7 +408,6 @@ footer{
 
 .shit{
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 @media (min-width: 768px){

@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import {MdDarkMode} from 'react-icons/md'
 
-const Header = (props) => {
+const Header = ({toggleDarkMode, darkMode}) => {
  
   return (
     <header className=''>
@@ -12,7 +12,7 @@ const Header = (props) => {
             <span className='logo-text'>Jerome Manset</span>
             </div>
         </a>
-      <NavBar toggleDarkMode={props.toggleDarkMode} darkMode={props.darkMode}/>
+      <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
     </header>
   )
 }

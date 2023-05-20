@@ -2,9 +2,9 @@ import React from 'react'
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
 import {MdEmail, MdDarkMode, MdLightMode} from 'react-icons/md'
 
-const NavBar = (props) => {
+const NavBar = ({toggleDarkMode, darkMode}) => {
 
-  const mode = props.darkMode ? <MdDarkMode className='icons' onClick={props.toggleDarkMode}/> : <MdLightMode className='icons' onClick={props.toggleDarkMode}/>
+  const mode = darkMode ? <MdDarkMode className='icons' onClick={toggleDarkMode}/> : <MdLightMode className='icons' onClick={toggleDarkMode}/>
 
   
   return (

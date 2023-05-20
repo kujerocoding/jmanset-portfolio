@@ -10,7 +10,7 @@ export default  [
     },
     {
         id: 2,
-        name: 'eliteBallers',
+        name: 'eliteballers',
         title: 'EliteBallers',
         img: 'EliteBallers.png',
         isOpen: false,
@@ -37,6 +37,8 @@ export default  [
         img: 'AnimeClouds.png',
         isOpen: false,
         desc: "I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.",
+        liveURL: 'https://animeclouds.netlify.app/',
+        repoURL: 'https://github.com/kujerocoding/animeclouds'
         
     },
 ]

@@ -12,22 +12,19 @@ const Main = () => {
 
     const [data, setData] = useState(ProjectData)
     const [showHello, setShowHello] = useState(true);
+    const [selectedProject, setSelectedProject] = useState('')
 
     const handleClick = (e) => {
       const { name } = e.target
-        console.log(e.target.name)
+        setSelectedProject(name)
         setShowHello(false)
         setData(prevData => {
             return prevData.map(item => item.name === name ? {...item, isOpen: true} : {...item, isOpen: false})
           }
         )
-        //console.log(data)
     }
-    //console.log('raw', data)
+
     const filteredData = data.filter(item => item.isOpen === true)
-    //console.log('filtered data: ',filteredData)
-    const {title, img, desc, liveURL, repoURL} = filteredData[0]
-    //console.log(title,img,desc)
 
     const variants = {
       open: { opacity: 1, x: 0 },
@@ -43,11 +40,27 @@ const Main = () => {
           <div className='project-links'>
             <h2 className='project-featured'>My Projects</h2>
               <ul className='project-lists'>
-                  <li><button name="eliteBallers" className='btn from-left' onClick={handleClick}>
-                    EliteBallers</button>
+                  <li>
+                    <button name="eliteballers" 
+                    className={`btn from-left ${selectedProject === 'eliteballers' ? 'shit' : ''}`} 
+                    onClick={handleClick}>
+                    EliteBallers
+                    </button>
                   </li>
-                  <li><button name="gamehub" className='btn from-left' onClick={handleClick}>GameHub</button></li>
-                  <li><button name="animeclouds" className='btn from-left' onClick={handleClick}>AnimeClouds</button></li>
+                  <li>
+                    <button name="gamehub" 
+                     className={`btn from-left ${selectedProject === 'gamehub' ? 'shit' : ''}`} 
+                    onClick={handleClick}>
+                      GameHub
+                    </button>
+                  </li>
+                  <li>
+                    <button name="animeclouds" 
+                     className={`btn from-left ${selectedProject === 'animeclouds' ? 'shit' : ''}`} 
+                    onClick={handleClick}>
+                      AnimeClouds
+                    </button>
+                  </li>
               </ul>
           </div>
       </div>
